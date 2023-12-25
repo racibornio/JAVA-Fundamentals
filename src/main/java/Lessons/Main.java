@@ -30,7 +30,7 @@ public class Main {
         if (valueToCheck <= 127) {
             System.out.println("The number type is byte.");
         } else {
-            System.out.println("The numer type is integer.");
+            System.out.println("The number type is integer.");
         }
 
 
