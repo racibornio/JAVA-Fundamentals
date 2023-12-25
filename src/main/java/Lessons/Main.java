@@ -13,5 +13,12 @@ public class Main {
         long value4 = 490_000_000;
         long value5 = 490_000_000_000_000L;
 
+        //3 - third exercise: display values concatenated
+        System.out.println("Byte variable value is " + value1);
+
+        //4 - fourth exercise: 'if' conditional statement
+
+
+
     }
 }
