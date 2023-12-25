@@ -13,10 +13,9 @@ public class NumbersProcessing {
         System.out.println("Binary value " + theNumber + " equals " + binaryNumber);
     }
 
-    void octToDecimal() {
-        int octNumber = 0654056;
-        String theNumber = "0654056";
-        System.out.println("Octal value " + theNumber + " equals " + octNumber);
+    void octToDecimal(String octNumber) {
+        int decimalValue = Integer.parseInt(octNumber, 8);
+        System.out.println("Octal value of " + octNumber + " equals " + decimalValue);
     }
 
     void hexToDecimal() {

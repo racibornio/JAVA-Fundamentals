@@ -11,11 +11,14 @@ public class Main {
         int binarka = 0b01101001;
         System.out.println(binarka);
 
-        int decymalka = 077;
+        int decymalka = 0123;
         System.out.println(decymalka);
 
         int hexadecymalka = 0xaa;
         System.out.println(hexadecymalka);
+
+        NumbersProcessing np = new NumbersProcessing();
+        np.octToDecimal(String.valueOf(11));
 
         /*Scanner scanner = new Scanner(System.in);
 
