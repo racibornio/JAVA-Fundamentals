@@ -33,11 +33,16 @@ public class Main {
             System.out.println("The number type is integer.");
         }
 
-        //5 - variable life cycle throughout the computer program
+        //5 - variable life cycle throughout the computer program lifecycle
         int myVariable = 8;
         System.out.println(myVariable);
         myVariable = -90;
         System.out.println(myVariable);
+
+        //6 - other primitive types
+        float floatVariableNo1 = 4.3232F;
+        double doubleVariableNo1 = 6.3246422;
+
 
 
     }
