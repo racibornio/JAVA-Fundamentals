@@ -47,7 +47,33 @@ public class Main {
         float floatVariableNo1 = 4.3232F;
         double doubleVariableNo1 = 6.3246422;
 
+        //7 - 'for' loop
 
+        for (int licznik = 0; licznik < 10; licznik++) {
+            System.out.println("napis");
+        }
+
+        //8 - 'while' loop
+
+        int liczba = 0;
+
+        while (liczba <= 10) {
+            System.out.println("Liczba to " + liczba);
+            liczba++;
+        }
+
+        //9 - 'while' and 'do-while' loop
+
+        int kolejnaLiczba = 10;
+
+        while (kolejnaLiczba > 0) {
+            System.out.println("Wartość to " + kolejnaLiczba);
+            kolejnaLiczba --;
+        }
+
+        for (kolejnaLiczba = 10; kolejnaLiczba > 0; kolejnaLiczba--) {
+            System.out.println("Wartość to " + kolejnaLiczba);
+        }
 
     }
 }
