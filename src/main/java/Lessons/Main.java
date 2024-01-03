@@ -50,7 +50,7 @@ public class Main {
         //7 - 'for' loop
 
         for (int licznik = 0; licznik < 10; licznik++) {
-            System.out.println("napis");
+            System.out.println("Napis po raz " + licznik);
         }
 
         //8 - 'while' loop
@@ -64,16 +64,72 @@ public class Main {
 
         //9 - 'while' and 'do-while' loop
 
-        int kolejnaLiczba = 10;
+        int kolejnaLiczba = -1;
 
         while (kolejnaLiczba > 0) {
-            System.out.println("Wartość to " + kolejnaLiczba);
             kolejnaLiczba --;
+            System.out.println("Wartość z pętli 'while' to " + kolejnaLiczba);
         }
 
-        for (kolejnaLiczba = 10; kolejnaLiczba > 0; kolejnaLiczba--) {
-            System.out.println("Wartość to " + kolejnaLiczba);
+        kolejnaLiczba = -1;
+
+        do {
+            System.out.println("Wartość z pętli 'do-while' to " + kolejnaLiczba);
+            kolejnaLiczba --;
+        } while (kolejnaLiczba > 0);
+
+
+        //10 - modulo division
+        int numberToCheck = 101;
+
+        if (numberToCheck % 2 == 0) {
+            System.out.println("Liczba jest parzysta.");
+        } else {
+            System.out.println("Liczba jest nieparzysta.");
         }
+
+        //10 - exercise
+        int myValue = 843208435;
+        int iloscLiczb = 0;
+
+        while (myValue > 0) {
+            myValue /= 10;
+            iloscLiczb++;
+        }
+        System.out.println("Cyfr jest " + iloscLiczb);
+
+        //10 - exercise
+        int liczbaDoZsumowaniaCyfr = 38290;
+        int sumaCyfr = 0;
+        while (liczbaDoZsumowaniaCyfr > 0) {
+            sumaCyfr += liczbaDoZsumowaniaCyfr%10;
+            liczbaDoZsumowaniaCyfr /= 10;
+        }
+        System.out.println("Suma cyfr to " + sumaCyfr);
+
+        boolean sygnalizacja = false;
+        boolean zapory = false;
+        if (sygnalizacja && zapory) {
+            System.out.println("Można jechać.");
+        }
+
+        int temeratura = 9;
+        if (temeratura <= 0) {
+            System.out.println("Jest zimno - weź czapkę.");
+        } else {
+            System.out.println("Życzę słonecznego dnia.");
+        }
+
+        int przekroczenie = 0;
+        if (przekroczenie > 0 && przekroczenie <=10) {
+            System.out.println("Informacja");
+        } else if (przekroczenie > 10) {
+            System.out.println("Ostrzeżenie");
+        }
+
+
+        Kwadraty kwadrat1 = new Kwadraty();
+        kwadrat1.wyswietlDlugosciBokow();
 
     }
 }
