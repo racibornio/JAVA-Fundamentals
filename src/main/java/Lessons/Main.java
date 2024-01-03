@@ -127,6 +127,20 @@ public class Main {
             System.out.println("Ostrzeżenie");
         }
 
+        int[] tablicaNaInt = new int[10];
+        System.out.println(tablicaNaInt.length);
+        for (int i = 0; i < tablicaNaInt.length; i++) {
+            tablicaNaInt[i] = i;
+        }
+        for (int i = 0; i < tablicaNaInt.length; i++) {
+            System.out.println(tablicaNaInt[i]);
+        }
+
+        String[] tablicaStringow = {"Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"};
+        for (int i = 0; i < tablicaStringow.length; i++) {
+            System.out.println(tablicaStringow[i]);
+        }
+
 
         Kwadraty kwadrat1 = new Kwadraty();
         kwadrat1.wyswietlDlugosciBokow();
