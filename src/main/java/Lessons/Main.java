@@ -43,7 +43,8 @@ public class Main {
 
         //6 - other primitive types
 
-        //each decimal in Java is stored as double so to point it explicitly to be float the value must be followed with 'F'
+        //each decimal in Java is stored as double so to point it explicitly to be float
+        // the value must be followed with 'F'
         float floatVariableNo1 = 4.3232F;
         double doubleVariableNo1 = 6.3246422;
 
@@ -107,6 +108,7 @@ public class Main {
         }
         System.out.println("Suma cyfr to " + sumaCyfr);
 
+        //11 - logical type
         boolean sygnalizacja = false;
         boolean zapory = false;
         if (sygnalizacja && zapory) {
@@ -141,6 +143,24 @@ public class Main {
             System.out.println(tablicaStringow[i]);
         }
 
+        char operacja = '+';
+        int a = 3, b = 9;
+        switch (operacja) {
+            case '+':
+                System.out.println(a + b);
+                break;
+            case '-':
+                System.out.println(a - b);
+                break;
+            case '*':
+                System.out.println(a * b);
+                break;
+            case '/':
+                System.out.println(a/b);
+                break;
+            default:
+                System.out.println("Błędny znak lub wartość.");
+        }
 
         Kwadraty kwadrat1 = new Kwadraty();
         kwadrat1.wyswietlDlugosciBokow();
