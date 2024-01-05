@@ -22,6 +22,11 @@ public class Main {
         //int (stored on 4 bytes) range: -2 147 483 648 to 2 147 483 647
         //long (stored on 8 bytes) range: -9 223 372 036 854 775 808 to 9 223 372 036 854 775 807
 
+        //3a - variables casting
+
+        byte zm = (byte) 333;
+        System.out.println("Wartość po rzutowaniu to " + zm);
+
         //4 - 'if' conditional statement
         int valueToCheck = 128;
 
@@ -33,6 +38,24 @@ public class Main {
             System.out.println("The number type is byte.");
         } else {
             System.out.println("The number type is integer.");
+        }
+
+        //4 exercise
+
+        String napis = "Cokolwiek: A - Z, a - z, 0 - 9, !@#$%^&*()_+-=~`[]{}|;':<>?,./ i w dowolnej długości";
+
+        char znakD = 'd';
+        char znakProcenta = '%';
+        char znak = 1;
+
+        String kolor = "";
+
+        if (kolor == "Zielony") {
+            System.out.println("Jedź");
+        } else if (kolor == "Czerwony") {
+            System.out.println("Stój");
+        } else {
+            System.out.println("Nieokreślony sygnał.");
         }
 
         //5 - variable life cycle throughout the computer program lifecycle
