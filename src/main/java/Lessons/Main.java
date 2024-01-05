@@ -64,6 +64,32 @@ public class Main {
         myVariable = -90;
         System.out.println(myVariable);
 
+        //5 - shortcuts
+        myVariable = 1;
+        System.out.println("Wartość wyjściowa to " + myVariable);
+        myVariable = myVariable + 1;
+        System.out.println("Wartość po zinkrementowaniu to " + myVariable);
+        myVariable++;
+        System.out.println("Wartość po zinkrementowaniu to " + myVariable);
+        myVariable += 1;
+        System.out.println("Wartość po zinkrementowaniu to " + myVariable);
+        myVariable += 10;
+        System.out.println("Wartość po zinkrementowaniu to " + myVariable);
+
+        int kolejnaZmienna = 0;
+        System.out.println(kolejnaZmienna++); //wynik to 0
+        System.out.println(kolejnaZmienna); // wynik to 1
+
+        int kolejnaInnaZmienna = 0;
+        System.out.println(++kolejnaInnaZmienna); //wynik to 1
+
+        //5 exercise
+
+        int a1 = 16;
+        int b1 = 4;
+        int remainder = a1 / b1++;
+        System.out.println("Reszta to " + remainder);
+
         //6 - other primitive types
 
         //each decimal in Java is stored as double so to point it explicitly to be float
