@@ -41,6 +41,12 @@ public class Main {
         }
 
         //4 exercise
+        int temeratura = 9;
+        if (temeratura <= 0) {
+            System.out.println("Jest zimno - weź czapkę.");
+        } else {
+            System.out.println("Życzę słonecznego dnia.");
+        }
 
         String napis = "Cokolwiek: A - Z, a - z, 0 - 9, !@#$%^&*()_+-=~`[]{}|;':<>?,./ i w dowolnej długości";
 
@@ -164,13 +170,7 @@ public class Main {
             System.out.println("Można jechać.");
         }
 
-        int temeratura = 9;
-        if (temeratura <= 0) {
-            System.out.println("Jest zimno - weź czapkę.");
-        } else {
-            System.out.println("Życzę słonecznego dnia.");
-        }
-
+        //11 exercise
         int przekroczenie = 0;
         if (przekroczenie > 0 && przekroczenie <=10) {
             System.out.println("Informacja");
