@@ -52,7 +52,7 @@ public class Main {
 
         char znakD = 'd';
         char znakProcenta = '%';
-        char znak = 1;
+        char znak1 = 1;
 
         String kolor = "";
 
@@ -178,19 +178,37 @@ public class Main {
             System.out.println("Ostrzeżenie");
         }
 
+        //12 - arrays
+        int[] tablica = {0, 1, 2, 3, 5, 8, 13, 21, 34, 55};
         int[] tablicaNaInt = new int[10];
         System.out.println(tablicaNaInt.length);
-        for (int i = 0; i < tablicaNaInt.length; i++) {
-            tablicaNaInt[i] = i;
-        }
+
         for (int i = 0; i < tablicaNaInt.length; i++) {
             System.out.println(tablicaNaInt[i]);
         }
 
+        for (int i = 0; i < tablicaNaInt.length; i++) {
+            tablicaNaInt[i] = i;
+        }
+
+        for (int i = 0; i < tablicaNaInt.length; i++) {
+            System.out.println(tablicaNaInt[i]);
+        }
+
+        //12 exercisel
+        char znak;
+        for (int i = 0; i < 255; i++) {
+            znak = (char) i;
+            System.out.println("Znak o id " + i + " to " + znak);
+        }
+
+        //12 exercise
         String[] tablicaStringow = {"Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"};
         for (int i = 0; i < tablicaStringow.length; i++) {
             System.out.println(tablicaStringow[i]);
         }
+
+
 
         char operacja = '+';
         int a = 3, b = 9;
