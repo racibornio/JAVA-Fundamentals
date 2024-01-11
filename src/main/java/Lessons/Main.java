@@ -278,6 +278,14 @@ public class Main {
         SterowaniePrzejazdemKolejowym przejazdNaWroclawGlowny = new SterowaniePrzejazdemKolejowym();
         SterowaniePrzejazdemKolejowym przejazdNaBrzezinkeSredzka = new SterowaniePrzejazdemKolejowym();
 
+        String n1 = "a";
+        String n2 = "a";
+        if (n1.equals(n2) ) {
+            System.out.println("Napisy są sobie równe.");
+        } else {
+            System.out.println("Napisy nie są równe.");
+        }
+
         System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
         przejazdNaWroclawGlowny.setSygnalizacja(1);
         System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
