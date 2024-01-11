@@ -96,6 +96,33 @@ public class Main {
         int remainder = a1 / b1++;
         System.out.println("Reszta to " + remainder);
 
+        //5a - variables scope
+        int zmiennaGlobalna = 90;
+
+        while (zmiennaGlobalna > 0) {
+            zmiennaGlobalna--;
+
+            int zmiennaLokalna = 0;
+        }
+
+        //zmiennaLokalna++;
+
+        //5b - comments
+        int value = 0; // do końca wiersza
+        //i po komentarzu
+
+        /*to jest
+        komentarz
+        wielolinijkowy
+
+        */
+        System.out.println("Przerwa w komentarzach");
+        /**
+         * to jest komentarz
+         * na potrzeby dokumentacji programów
+         * napisanych w Javie
+         */
+
         //6 - other primitive types
 
         //each decimal in Java is stored as double so to point it explicitly to be float
@@ -195,7 +222,7 @@ public class Main {
             System.out.println(tablicaNaInt[i]);
         }
 
-        //12 exercisel
+        //12 exercise
         char znak;
         for (int i = 0; i < 255; i++) {
             znak = (char) i;
@@ -208,6 +235,19 @@ public class Main {
             System.out.println(tablicaStringow[i]);
         }
 
+        //13 - nested loops
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.println("Dla i =  " + i + ", j = " + j);
+                System.out.println("A zatem " + i + " * " + j + " to " + i*j);
+            }
+        }
+
+        for (int i = 0; i < 100; i++) {
+            for (int j = 0; j < 100; j++) {
+                System.out.println(i + "*" + j + "=" + i*j);
+            }
+        }
 
 
         char operacja = '+';
@@ -229,8 +269,41 @@ public class Main {
                 System.out.println("Błędny znak lub wartość.");
         }
 
+        //Obiektowość
+        Punkt punkt = new Punkt();
+        System.out.println(punkt.x);
+        punkt.x = 33;
+        System.out.println(punkt.x);
+
+        SterowaniePrzejazdemKolejowym przejazdNaWroclawGlowny = new SterowaniePrzejazdemKolejowym();
+        SterowaniePrzejazdemKolejowym przejazdNaBrzezinkeSredzka = new SterowaniePrzejazdemKolejowym();
+
+        System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
+        przejazdNaWroclawGlowny.setSygnalizacja(1);
+        System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
+        przejazdNaWroclawGlowny.setSygnalizacja(5);
+        System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
+
+        double eksperyment = 0.000001;
+        System.out.println("eksperyment " + eksperyment);
+        int zrzutowane = 0;
+        /*
+        for (int i = 0; i <= 1000000; i++) {
+            System.out.println(eksperyment);
+            if (eksperyment % 2 == 0) {
+                zrzutowane = int(eksperyment);
+            }
+        }
+        */
+
+
         Kwadraty kwadrat1 = new Kwadraty();
         kwadrat1.wyswietlDlugosciBokow();
 
+
+        System.out.println("paramsy");
+        for (int i = 0; i < args.length; i ++) {
+            System.out.println(args[i]);
+        }
     }
 }
