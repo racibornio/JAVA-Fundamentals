@@ -305,6 +305,10 @@ public class Main {
         Punkt.poleStatyczneTypuInt = 1;
         System.out.println("Wartość w zmiennej statycznej to " + Punkt.poleStatyczneTypuInt);
 
+        //dziedziczenie
+        Punkt3D punkt3D = new Punkt3D();
+        punkt3D.z = 0;
+
 
         Kwadraty kwadrat1 = new Kwadraty();
         kwadrat1.wyswietlDlugosciBokow();
