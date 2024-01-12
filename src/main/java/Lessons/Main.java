@@ -1,5 +1,7 @@
 package Lessons;
 
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -275,6 +277,11 @@ public class Main {
         punkt.x = 33;
         System.out.println(punkt.x);
 
+        Punkt kolejnyPunkt;
+
+        kolejnyPunkt = new Punkt();
+        Punkt innyPunkt = new Punkt();
+
         SterowaniePrzejazdemKolejowym przejazdNaWroclawGlowny = new SterowaniePrzejazdemKolejowym();
         SterowaniePrzejazdemKolejowym przejazdNaBrzezinkeSredzka = new SterowaniePrzejazdemKolejowym();
 
@@ -286,23 +293,17 @@ public class Main {
             System.out.println("Napisy nie są równe.");
         }
 
+
         System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
         przejazdNaWroclawGlowny.setSygnalizacja(1);
         System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
         przejazdNaWroclawGlowny.setSygnalizacja(5);
         System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
 
-        double eksperyment = 0.000001;
-        System.out.println("eksperyment " + eksperyment);
-        int zrzutowane = 0;
-        /*
-        for (int i = 0; i <= 1000000; i++) {
-            System.out.println(eksperyment);
-            if (eksperyment % 2 == 0) {
-                zrzutowane = int(eksperyment);
-            }
-        }
-        */
+        //metoda statyczna
+        Punkt.metodaStatycna();
+        Punkt.poleStatyczneTypuInt = 1;
+        System.out.println("Wartość w zmiennej statycznej to " + Punkt.poleStatyczneTypuInt);
 
 
         Kwadraty kwadrat1 = new Kwadraty();

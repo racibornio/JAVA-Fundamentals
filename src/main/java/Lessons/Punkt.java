@@ -45,4 +45,10 @@ public class Punkt {
         return punkt;
     }
 
+    static void metodaStatycna() {
+        System.out.println("Test metody statycznej - dostępnej dla klasy bez instancjonowania obiektu.");
+    }
+
+    static int poleStatyczneTypuInt;
+
 }
