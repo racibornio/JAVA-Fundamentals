@@ -51,4 +51,21 @@ public class Punkt {
 
     static int poleStatyczneTypuInt;
 
+    int dodawaj(int a, int b) {
+        int suma = a + b;
+        return suma;
+    }
+
+    int dodawaj(int a, int b, int c) {
+        int suma = a + b + c;
+        return suma;
+    }
+
+    int dodawaj(int a, int b, int c, int d) {
+        int suma = a + b + c + d;
+        return suma;
+    }
+
+
+
 }

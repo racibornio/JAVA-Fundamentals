@@ -318,5 +318,17 @@ public class Main {
         for (int i = 0; i < args.length; i ++) {
             System.out.println(args[i]);
         }
+
+        Punkt punktSpecjalny = new Punkt();
+        System.out.println(punktSpecjalny.dodawaj(2, 3));
+
+        System.out.println(punktSpecjalny.dodawaj(4, 5, 6));
+
+        System.out.println(punktSpecjalny.dodawaj(4, 4, 4, 4));
+
+
+        //System.out.println(Punkt.poleStatyczneTypuInt = 99);
+        Punkt.metodaStatycna();
+
     }
 }
