@@ -316,7 +316,7 @@ public class Main {
 
         System.out.println("paramsy");
         for (int i = 0; i < args.length; i ++) {
-            System.out.println(args[i]);
+            System.out.println();
         }
 
         Punkt punktSpecjalny = new Punkt();
@@ -329,6 +329,11 @@ public class Main {
 
         //System.out.println(Punkt.poleStatyczneTypuInt = 99);
         Punkt.metodaStatycna();
+
+        int[] tabOfInt = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (Integer i: tabOfInt) {
+            System.out.println("On index " + i + " the value is " + tabOfInt[i]);
+        }
 
     }
 }
