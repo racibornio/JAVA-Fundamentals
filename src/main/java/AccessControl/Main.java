@@ -8,8 +8,7 @@ public class Main {
         int haslo;
         int licznikNiepoprawnychProbPodaniaHasla = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj hasło");
-        haslo = scanner.nextInt();
+        haslo = pobierzHaslo(scanner);
 
         if (haslo == 123) {
             System.out.println("Witamy w systemie.");
@@ -29,5 +28,12 @@ public class Main {
                 }
             }
         }
+    }
+
+    private static int pobierzHaslo(Scanner scanner) {
+        int haslo;
+        System.out.println("Podaj hasło");
+        haslo = scanner.nextInt();
+        return haslo;
     }
 }

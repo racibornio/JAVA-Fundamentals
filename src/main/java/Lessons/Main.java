@@ -1,9 +1,12 @@
 package Lessons;
 
-import java.util.Set;
-
 public class Main {
     public static void main(String[] args) {
+
+        for (int licznik = 0; licznik <= 3; licznik++) {
+            System.out.println("Kontynuuj świadczenie usługi");
+        }
+
 
         //1 - type 'sout'
         System.out.println("It works!");
@@ -330,10 +333,6 @@ public class Main {
         //System.out.println(Punkt.poleStatyczneTypuInt = 99);
         Punkt.metodaStatycna();
 
-        int[] tabOfInt = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        for (Integer i: tabOfInt) {
-            System.out.println("On index " + i + " the value is " + tabOfInt[i]);
-        }
 
     }
 }
