@@ -248,27 +248,27 @@ public class Main {
             }
         }
 
-        for (int i = 0; i < 100; i++) {
-            for (int j = 0; j < 100; j++) {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
                 System.out.println(i + "*" + j + "=" + i*j);
             }
         }
 
-
+        //14 - instrukcja warunkowa Switch
         char operacja = '+';
         int a = 3, b = 9;
         switch (operacja) {
             case '+':
-                System.out.println(a + b);
+                System.out.println("Suma to " + (a + b));
                 break;
             case '-':
-                System.out.println(a - b);
+                System.out.println("Różnica to " + (a - b));
                 break;
             case '*':
-                System.out.println(a * b);
+                System.out.println("Iloczyn to " + (a * b));
                 break;
             case '/':
-                System.out.println(a/b);
+                System.out.println("Iloraz to " + (a/b));
                 break;
             default:
                 System.out.println("Błędny znak lub wartość.");
@@ -280,28 +280,14 @@ public class Main {
         punkt.x = 33;
         System.out.println(punkt.x);
 
+        punkt.wyswietlWspolrzedne();
+
         Punkt kolejnyPunkt;
 
         kolejnyPunkt = new Punkt();
         Punkt innyPunkt = new Punkt();
 
-        SterowaniePrzejazdemKolejowym przejazdNaWroclawGlowny = new SterowaniePrzejazdemKolejowym();
-        SterowaniePrzejazdemKolejowym przejazdNaBrzezinkeSredzka = new SterowaniePrzejazdemKolejowym();
 
-        String n1 = "a";
-        String n2 = "a";
-        if (n1.equals(n2) ) {
-            System.out.println("Napisy są sobie równe.");
-        } else {
-            System.out.println("Napisy nie są równe.");
-        }
-
-
-        System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
-        przejazdNaWroclawGlowny.setSygnalizacja(1);
-        System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
-        przejazdNaWroclawGlowny.setSygnalizacja(5);
-        System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
 
         //metoda statyczna
         Punkt.metodaStatycna();
@@ -312,16 +298,11 @@ public class Main {
         Punkt3D punkt3D = new Punkt3D();
         punkt3D.z = 0;
 
-
         Kwadraty kwadrat1 = new Kwadraty();
         kwadrat1.wyswietlDlugosciBokow();
 
 
-        System.out.println("paramsy");
-        for (int i = 0; i < args.length; i ++) {
-            System.out.println();
-        }
-
+        //przeciążanie metod
         Punkt punktSpecjalny = new Punkt();
         System.out.println(punktSpecjalny.dodawaj(2, 3));
 
@@ -333,6 +314,29 @@ public class Main {
         //System.out.println(Punkt.poleStatyczneTypuInt = 99);
         Punkt.metodaStatycna();
 
+        /////////////////////////////////////////////////
+
+        System.out.println("paramsy");
+        for (int i = 0; i < args.length; i ++) {
+            System.out.println();
+        }
+
+        String n1 = "a";
+        String n2 = "a";
+        if (n1.equals(n2) ) {
+            System.out.println("Napisy są sobie równe.");
+        } else {
+            System.out.println("Napisy nie są równe.");
+        }
+
+        SterowaniePrzejazdemKolejowym przejazdNaWroclawGlowny = new SterowaniePrzejazdemKolejowym();
+        SterowaniePrzejazdemKolejowym przejazdNaBrzezinkeSredzka = new SterowaniePrzejazdemKolejowym();
+
+        System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
+        przejazdNaWroclawGlowny.setSygnalizacja(1);
+        System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
+        przejazdNaWroclawGlowny.setSygnalizacja(5);
+        System.out.println(przejazdNaWroclawGlowny.sygnalizacja);
 
     }
 }

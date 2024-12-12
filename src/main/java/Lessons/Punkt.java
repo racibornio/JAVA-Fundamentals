@@ -51,6 +51,8 @@ public class Punkt {
 
     static int poleStatyczneTypuInt;
 
+
+    //definicje metod przeciążonych
     int dodawaj(int a, int b) {
         int suma = a + b;
         return suma;
