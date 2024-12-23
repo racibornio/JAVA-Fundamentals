@@ -10,4 +10,8 @@ public class Punkt3D extends Punkt{
     int pobierzZ() {
         return z;
     }
+
+    void setXfromAnIngeritedClass() {
+        super.x = 90;
+    }
 }

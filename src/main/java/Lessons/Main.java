@@ -3,7 +3,7 @@ package Lessons;
 public class Main {
     public static void main(String[] args) {
 
-        for (int licznik = 0; licznik <= 3; licznik++) {
+        for (int licznik = 0; licznik < 3; licznik++) {
             System.out.println("Kontynuuj świadczenie usługi");
         }
 
@@ -175,6 +175,10 @@ public class Main {
         } else {
             System.out.println("Liczba jest nieparzysta.");
         }
+
+        double nowaZmienna = 77;
+        System.out.println("MODULO " + nowaZmienna%33);
+        System.out.println("NIE-MODULO " + nowaZmienna/33);
 
         //10 - exercise
         int myValue = 843208435;
